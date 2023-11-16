@@ -2,8 +2,8 @@ package com.example.www_lab_7.backend.pks;
 
 import lombok.Getter;
 import lombok.Setter;
-import vn.edu.iuh.fit.backend.models.Order;
-import vn.edu.iuh.fit.backend.models.Product;
+import com.example.www_lab_7.backend.models.Order;
+import com.example.www_lab_7.backend.models.Product;
 
 import java.io.Serializable;
 
