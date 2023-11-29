@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 @Controller
-@RequestMapping("/admin")
+//@RequestMapping("/admin")
 public class ProductController {
     @Autowired
     private ProductServices productServices;
@@ -45,7 +45,7 @@ public class ProductController {
                     .collect(Collectors.toList());
             model.addAttribute("pageNumbers", pageNumbers);
         }
-        return "admin/product/listing";
+        return "product/listing";
     }
 
     @GetMapping("/products/show-add-form")
@@ -60,7 +60,7 @@ public class ProductController {
             @ModelAttribute("product") Product product,
             BindingResult result, Model model) {
         productRepository.save(product);
-        return "redirect:/admin/products";
+        return "redirect:/products";
     }
 
     //    @DeleteMapping("/products/delete/{id}")

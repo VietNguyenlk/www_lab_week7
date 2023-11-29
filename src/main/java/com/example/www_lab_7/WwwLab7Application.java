@@ -53,7 +53,7 @@ public class WwwLab7Application {
 
 
 
-                ProductImage img = new ProductImage("assets/img-sample.png", "sample image");
+                ProductImage img = new ProductImage("assets/1.jpg", "sample image");
                 img.setProduct(product);
 
                 ProductPrice price = new ProductPrice(LocalDateTime.now(), rnd.nextInt(1500), "Note #" + i);
