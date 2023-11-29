@@ -50,7 +50,7 @@
         <td th:text="${product.manufacturer}"></td>
         <td th:text="${product.status}"></td>
         <td><a class="btn btn-link" th:href="@{products/show-edit-form/{id}(id=${product.product_id})}">Edit</a></td>
-        <td><a class="btn btn-close-white" th:href="@{products/delete/{id}(id=${product.product_id})}">Delete</a></td>
+        <td><a class="btn btn-secondary" th:href="@{products/delete/{id}(id=${product.product_id})}">Delete</a></td>
     </tr>
     </tbody>
 </table>

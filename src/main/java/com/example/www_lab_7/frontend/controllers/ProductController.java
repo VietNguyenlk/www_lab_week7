@@ -52,7 +52,7 @@ public class ProductController {
     public String add(Model model) {
         Product product = new Product();
         model.addAttribute("product", product);
-        return "admin/product/add-form";
+        return "product/add-form";
     }
 
     @PostMapping("/products/add")
@@ -68,7 +68,7 @@ public class ProductController {
     public String addCandidate(@PathVariable("id") long id) {
         Product product = productRepository.findById(id).orElse(new Product());
         productRepository.delete(product);
-        return "redirect:/admin/products";
+        return "redirect:/products";
     }
 
 }
